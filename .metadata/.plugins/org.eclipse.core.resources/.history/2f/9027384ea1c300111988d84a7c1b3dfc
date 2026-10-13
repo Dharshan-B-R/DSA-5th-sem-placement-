@@ -1,0 +1,13 @@
+package com.linkedlist;
+
+public class Node {
+
+	int data;
+	Node prev,next;
+	
+	Node(int ele)
+	{
+		data=ele;
+		prev=next=null;
+	}
+}

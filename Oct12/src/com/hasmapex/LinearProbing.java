@@ -1,0 +1,47 @@
+package com.hasmapex;
+
+public class LinearProbing {
+	int size;
+	int[] a;
+	LinearProbing(int size)
+	{
+		this.size=size;
+		a=new int[size];
+	}
+	
+	 void insertkey(int ele)
+	 {
+		 //hash fun
+		 
+		 int ind=ele%size;
+		 int pos;
+		 for(int i=0;i<size;i++)
+		 {
+			 pos=(ind+i)%size;
+			 if(a[pos]==0)
+			 {
+				 a[pos]=ele;
+				 return;
+			 }
+		 }
+		 System.out.println("hash table is full");
+	 }
+	 void display()
+	 {
+		 System.out.println("elements \n");
+		 for(int i=0;i<size;i++)
+			 System.out.println("ind= "+i+"="+a[i]);
+	 }
+	public static void main(String[] args) {
+		
+		LinearProbing ob = new LinearProbing(11);
+		int[] a = {11,2,33,4,56,77};
+		for(int ele:a)
+		{
+
+		ob.insertkey(ele);
+		ob.display();
+		}
+	}
+
+}

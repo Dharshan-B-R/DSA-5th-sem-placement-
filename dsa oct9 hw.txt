@@ -1,0 +1,5 @@
+1.find the sum of alternative nodes
+2.print all the nodes whose value is below avg of total number of nodes
+3.print all the prime numbers , within the linked list
+4.check if a list is palindrome
+

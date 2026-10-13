@@ -1,0 +1,22 @@
+package com.linkedlist;
+
+import java.util.Scanner;
+
+public class SearchKey {
+
+	public static void main(String[] args) {
+		DLL ob = new DLL();
+
+		for(int i=10;i<100;i=i+10)
+		ob.insertEnd(i);
+		ob.display();
+
+		Scanner sc = new Scanner(System. in);
+		System.out.println("Enter the key = ");
+		int key = sc.nextInt();
+
+		ob.search(key);
+
+	}
+
+}

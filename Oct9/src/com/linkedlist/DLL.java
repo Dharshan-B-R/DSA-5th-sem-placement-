@@ -1,0 +1,253 @@
+package com.linkedlist;
+
+import java.util.Scanner;
+
+public class DLL {
+
+	int count;
+	Node head;
+	DLL()
+	{
+		head=null;
+		count=0;
+	}
+	void insertBegin(int ele)
+	{
+		Node nn =new Node(ele);
+		if(head==null)
+			head=nn;
+		else
+		{
+			nn.next=head;
+			head.prev=nn;
+			head=nn;
+		}
+			count++;
+			
+	}
+	void display()
+	{
+		if(head==null)
+			{System.out.println("no ele in list");
+	}
+	else
+	{
+		Node ptr=head;
+		while(ptr!=null)
+		{
+			System.out.print(ptr.data+"=>");
+			ptr=ptr.next;
+
+		}
+		System.out.println("null");
+		
+	}
+}
+	void insertEnd(int ele)
+	{
+		Node nn = new Node(ele);
+				if(head==null)
+					head=nn;
+				else
+				{
+					Node ptr =head;
+					while(ptr.next!=null)
+						ptr=ptr.next;
+					ptr.next=nn;
+					nn.prev=ptr;
+				}
+				count++;
+	}
+					
+			void insertPos(int ele)
+			{
+				try (Scanner sc = new Scanner(System.in)) {
+					System.out.println("enter pos");
+					int pos= sc.nextInt();
+					if(pos<1|| pos>count+1)
+						System.out.println("pos invalid");
+					else if(pos==1)
+					insertBegin(ele);
+					else if(pos==count+1)
+						insertEnd(ele);
+					
+					else
+					{
+						Node nn=new Node(ele);
+						Node pp=head,cp=head;
+						for(int i=1;i<pos;i++)
+						{
+							pp=cp;
+							cp=cp.next;
+						}
+						pp.next=nn;
+						nn.prev=pp;
+						nn.next=cp;
+						cp.prev=nn;
+						count++;
+					}
+				}
+			}
+			
+			void search(int key)
+			{
+			Node ptr=head;
+			while(ptr != null)
+			{
+			if(ptr.data == key)
+			{
+
+			System.out.println("Key found");
+			return;
+
+			}
+					ptr=ptr.next;
+			}
+			System.out.println("Key not found");
+
+			}
+			
+			void min()
+			{
+			if(head == null)
+			System.out.println("List empty");
+			else
+			{
+			Node ptr=head;
+			Node minNode=head;
+			while(ptr != null)
+			{
+			if(ptr.data<minNode.data)
+			{
+			minNode=ptr;
+			}
+			ptr=ptr.next;
+			}
+			
+			System.out.println("MIN = "+minNode.data);
+			}
+			}
+			
+			void max()
+			{
+
+			if(head == null)
+			{
+			System.out.println("List empty");
+			}
+			else
+			{
+			Node ptr=head;
+			Node maxNode=head;
+			while(ptr != null)
+			{
+			if(ptr.data>maxNode.data)
+			{
+			maxNode=ptr;
+			}
+			ptr=ptr.next;
+			}
+			
+			System.out.println("MAX = "+maxNode.data);
+			}
+}
+			
+			
+			void sum()
+			{
+			if(head == null)
+			System.out.println("Sum = 0 List empty");
+			else
+			{
+
+			Node ptr=head;
+			int sum=0;
+			while(ptr != null)
+			{
+
+			sum+=ptr.data;
+			ptr=ptr.next;
+			}
+			
+			System.out.println("Sum ="+sum);
+			}
+			
+		}
+			
+
+			void deleteBegin()
+			{
+			if(head == null)
+			System.out.println("List empty");
+			else
+			{
+			System.out.println(head.data+": deleted");
+			head=head. next;
+			if(head != null)
+			head.prev=null;
+			count --;
+
+			}
+
+			}
+			
+			
+			
+			void deleteEnd()
+			{
+			if(head == null)
+			System.out.println("List empty");
+			else
+			{
+			Node pp =head, cp=head;
+			while(cp.next != null)
+			{
+			pp=cp;
+			cp=cp.next;
+			}
+			System.out.println("Deleting = "+cp.data);
+			if(pp == cp)
+			head=null;
+			else
+			pp.next=null;
+			count --;
+
+			}
+
+			}
+			
+			void deletePos()
+			{
+			Scanner sc = new Scanner(System.in);
+			System.out.println("Enter pos - ");
+			int pos= sc.nextInt();
+			if(pos<1 ||pos>count)
+			System.out.println("pos invalid");
+			else if(pos == 1)
+			deleteBegin();
+			else if(pos == count)
+			deleteEnd();
+			else
+			{
+				Node pp=head, cp=head;
+				for(int i=1;i<pos;i++)
+				{
+				pp=cp;
+				cp=cp.next;
+				}
+				System.out.println("Deleting = "+cp.data);
+				pp.next=cp.next;
+				(cp.next).prev=pp;
+				count --;
+			}
+			
+			}
+
+			
+			
+			
+			
+			
+	}
+
+	

@@ -1,0 +1,19 @@
+package com.linkedlist;
+
+public class Minmax {
+
+	public static void main(String[] args) {
+		int[] a = {111,22,33,44, 555, 66,77, 88} ;
+
+		DLL ob = new DLL();
+
+		for(int ele:a)
+		ob.insertEnd(ele);
+		ob.display();
+		ob.max();
+		ob.min();
+		ob.sum();
+		ob.deleteBegin();
+	}
+
+}
