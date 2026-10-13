@@ -96,3 +96,22 @@
 2026-10-13 05:44:02.762: [INFO] BookmarksLoadDropped droppedNodes=0
 2026-10-13 05:44:02.762: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
 2026-10-13 05:44:10.238: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 07:53:01.080: [INFO] CurrentProfilePath: C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 07:53:01.080: [INFO] Profiles total count: 1
+2026-10-13 07:53:01.081: [INFO] Profile: name=Profile 1 path=C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-09T05:33:01.786Z
+2026-10-13 07:53:01.081: [INFO] LastUsedProfileDir: C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 07:53:01.081: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-09T05:33:01.786Z
+2026-10-13 07:53:01.081: [INFO] OnDoneLoading sync enabled: 0
+2026-10-13 07:53:01.081: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-13 07:53:01.081: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-13 07:53:01.081: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 07:53:03.228: [INFO] BookmarksSnapshot Shutdown total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
+2026-10-13 07:59:42.819: [INFO] CurrentProfilePath: C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 07:59:42.819: [INFO] Profiles total count: 1
+2026-10-13 07:59:42.864: [INFO] Profile: name=Profile 1 path=C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-09T05:33:01.786Z
+2026-10-13 07:59:42.864: [INFO] LastUsedProfileDir: C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default
+2026-10-13 07:59:42.864: [INFO] MostRecentlyActiveProfile: name=Profile 1 path=C:\Users\Dhars\OneDrive\Desktop\dsa\.metadata\.plugins\org.eclipse.swt\EBWebView\Default lastActive=2026-10-09T05:33:01.786Z
+2026-10-13 07:59:42.864: [INFO] OnDoneLoading sync enabled: 0
+2026-10-13 07:59:42.864: [INFO] BookmarkModelLoaded, ids_reassigned: 0
+2026-10-13 07:59:42.864: [INFO] BookmarksLoadDropped droppedNodes=0
+2026-10-13 07:59:42.864: [INFO] BookmarksSnapshot Startup total=0 bar=0 other=0 mobile=0 showBar=0 showBarNTP=1
