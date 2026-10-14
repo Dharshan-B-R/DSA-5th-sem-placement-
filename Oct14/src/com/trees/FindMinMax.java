@@ -36,7 +36,7 @@ public class FindMinMax {
 		System.out.println("Exception  "+e.getMessage());
 	}
 
-	}
+	}}
 }
 
 
