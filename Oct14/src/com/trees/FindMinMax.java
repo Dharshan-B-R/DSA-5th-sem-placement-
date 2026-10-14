@@ -40,6 +40,14 @@ public class FindMinMax {
 	else
 	return 1+countInternal(root.left)+countInternal(root.right);
 	}
+	
+	static int sumNodes(Node root)
+	{
+	if(root == null)
+	return 0 ;;
+	return root.data+sumNodes(root.left)+sumNodes(root.right);
+	
+}
 	public static void main(String[] args) {
 		int[] a = {11,22,55,4,33,67,8,12};
 		BST ob = new BST();
@@ -55,6 +63,7 @@ public class FindMinMax {
 		System.out.println("Max = "+findMax(ob.root));
 		System.out.println("leaf nodes ="+countLeaf(ob.root));
 		System.out.println("Internal nodes = "+countInternal(ob.root));
+		System.out.println("Sum nodes = "+sumNodes(ob.root));
 		} catch (Exception e) {
 		System.out.println("Exception  "+e.getMessage());
 	}
