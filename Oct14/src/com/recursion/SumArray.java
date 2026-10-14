@@ -1,4 +1,4 @@
-package com.trees;
+package com.recursion;
 
 public class SumArray {
 	
