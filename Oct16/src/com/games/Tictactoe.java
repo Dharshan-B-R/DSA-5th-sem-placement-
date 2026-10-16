@@ -28,7 +28,7 @@ public class Tictactoe {
 	{2,5,8},
 	{0,4,8},
 	{2,4,6}};
-	return p;
+	
 	
 	int x,y,z;
 	for(int[] ele :win)
@@ -53,6 +53,7 @@ public class Tictactoe {
 		int p1=1,p2=2;
 		int moves=1;
 		int pos;
+		int p;
 		while(moves <= 9)
 		{
 
@@ -65,8 +66,9 @@ public class Tictactoe {
 
 		System.out.println("Enter pos=");
 		pos=sc.nextInt();
-		}while(a[pos] != 0);
+		}while(pos<0||pos>=9||a[pos] != 0);
 		a[pos]=p1;
+		p=p1;
 		}
 		else
 		{
@@ -76,13 +78,24 @@ public class Tictactoe {
 
 			System.out.println("Enter pos=");
 			pos=sc.nextInt();
-			}while(a[pos] != 0);
+			}while(pos<0||pos>=9||a[pos] != 0);
 			a[pos]=p2;
+			p=p2;
 		}
 		
 		display(a);
-		moves++;
+		if(moves>=5)
+		{
+			int winner=checkWinner(a,p);
+			if(winner !=- 1)
+			{
+			System.out.println("Winner="+p);
+			break;
+			}
+		}	moves++;
+		}
 		
-}
-}
+	if(moves>9)
+		System.out.println("MATCH DRAW");
+	}
 }
