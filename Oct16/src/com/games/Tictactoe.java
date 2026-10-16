@@ -18,6 +18,31 @@ public class Tictactoe {
 	}
 	
 }
+	static int checkWinner(int[] a, int p)
+	{
+	int[][] win= {{0,1,2},
+	{3,4,5},
+	{6,7,8},
+	{0,3,6},
+	{1,4,7},
+	{2,5,8},
+	{0,4,8},
+	{2,4,6}};
+	return p;
+	
+	int x,y,z;
+	for(int[] ele :win)
+	{
+	x=ele[0]; //ele:{0,1,2}
+	y=ele[1];
+	z=ele[2];
+	if(a[x] == p && a[y] == p && a[z] == p)
+	return p;
+	}
+	return -1;
+	
+}
+	
 	public static void main(String[] args) {
 		
 		int[] a = new int[9];
